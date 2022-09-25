@@ -102,7 +102,7 @@ main {
     outline: none;
     bottom: -30px;
     transition: box-shadow .5s ease;
-    left: 45.5%;
+    left: 45%;
 }
 
 #turn:hover {
@@ -155,6 +155,6 @@ main {
     }
 
     #turn {
-        left: 41.5%;
+        left: 41%;
     }
 }
