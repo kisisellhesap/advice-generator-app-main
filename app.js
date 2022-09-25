@@ -9,7 +9,7 @@ turn.addEventListener("click", function () {
     let rand = Math.random(1);
     let totalLenght = 224;
     let randIndex = Math.floor(rand * totalLenght);
-    console.log(randIndex);
+    // console.log(randIndex);
     turn.classList.add("turn-effect");
     content.classList.add("content-effect");
 
@@ -31,13 +31,13 @@ async function getAdvice(randIndex) {
 
     try {
         let url = await fetch(`https://api.adviceslip.com/advice/${randIndex}`);
-        console.log(url);
+        // console.log(url);
 
         if (url.ok) {
             let data = await url.json();
             if (data.hasOwnProperty("slip")) {
                 let slip = data.slip;
-                console.log(slip);
+                // console.log(slip);
                 return displayAdvice(slip.advice, slip.id);
             }
 
@@ -48,7 +48,7 @@ async function getAdvice(randIndex) {
         }
     }
     catch (err) {
-        console.log(err);
+        // console.log(err);
         adviceLine.textContent = ` ❝ ${err} ❞`;
         adviceId.textContent = "# ---";
     }
