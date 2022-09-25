@@ -60,7 +60,7 @@ main {
     padding: 3rem;
     font-family: 'Manrope',
         sans-serif;
-    gap: 2rem;
+    gap: 3rem;
     user-select: none;
     transition: opacity .5s ease;
 }
