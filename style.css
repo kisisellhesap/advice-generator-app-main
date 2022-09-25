@@ -89,7 +89,7 @@ main {
 }
 
 
-.turn {
+#turn {
     position: absolute;
     display: flex;
     align-items: center;

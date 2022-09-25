@@ -1,6 +1,6 @@
 // 1-224
 
-const turn = document.querySelector(".turn");
+const turn = document.querySelector("#turn");
 const adviceLine = document.querySelector(".advice-line");
 const adviceId = document.querySelector(".advice-id");
 const content = document.querySelector(".content");
